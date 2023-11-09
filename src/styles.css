@@ -72,7 +72,7 @@ body {
   /* Common text styling for brief */
   .brief-common-text {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #333; /* You can change the color if needed */
     line-height: 1.6; /* Adjust line spacing for better readability */
     margin-bottom: 1em; /* Gives a little space after each paragraph */
@@ -85,4 +85,23 @@ body {
     color: #333; /* You can change the color if needed */
     line-height: 1.6; /* Adjust line spacing for better readability */
     margin-bottom: 1em; /* Gives a little space after each paragraph */
+  }
+
+
+
+
+
+  /*text styling*/
+  .text-centering {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* You can use other values like 'flex-start', 'flex-end', or 'space-around' as needed */
+    
+    
+  }
+
+  .link-style {
+    color:rgb(208, 218, 19);
+    background-color: rgb(4, 7, 49);
+    font-size: 16px;
   }
