@@ -85,7 +85,7 @@ function EmploymentInformation() {
         }
 
         {
-          <p className="brief-common-text">(1) PMI Aerospace: [9/7/2021] [current] Tittle: [Machinist & Operations Specialist] @ https://pmiaerospace.com/ </p>
+          <p className="brief-common-text">(1) PMI Aerospace: [9/7/2021] [1/14/2024] Tittle: [Machinist & Operations Specialist] @ https://pmiaerospace.com/ </p>
 
         }
         
@@ -95,7 +95,7 @@ function EmploymentInformation() {
           
         
         {
-          <p className="brief-common-text">(2) MacLean-Fogg Company: [start] [end] Tittle:[Machinist & Operations Specialist] @ https://macleanfogg.com/  </p>
+          <p className="brief-common-text">(2) MacLean-Fogg Company: [9/7/2020] [9/7/2021] Tittle:[Machinist & Operations Specialist] @ https://macleanfogg.com/  </p>
         }
         <Link to="/MacLeanFoggCompany" className="link-style">Click to Investigate Job Discription</Link>
         
@@ -110,14 +110,6 @@ function EmploymentInformation() {
         }
         <Link to="/Universaltankandfabrication" className="link-style">Click to Investigate Job Discription</Link>
         
-
-
-
-
-
-
-
-
 
       </div>
     </div>
@@ -324,7 +316,12 @@ function MacLeanFoggCompany() {
     <div>
       {/* Add content for the JobDescription page */}
       <h2>MacLeanFoggCompany</h2>
-      <p>This is the job description page.</p>
+      <p></p>
+      <p>Job description: keep selected machines operational.   </p>
+      <p>Most day I ran ford transmission blanks about 1200 a shift.</p>
+      <p>Job consisted of running the gantry’s used to load and onload the lathe machine. after than gantry’s and transfer gage travel the part it goes though an auto gage </p>
+      <p>after this its read of packaging. Most machines have a similar setup</p>
+
     </div>
   );
 }
@@ -334,7 +331,7 @@ function SPGinternational() {
     <div>
       {/* Add content for the JobDescription page */}
       <h2>SPGinternational</h2>
-      <p>This is the job description page.</p>
+      <p>welding with jig fixtures </p>
     </div>
   );
 }
@@ -344,7 +341,7 @@ function Universaltankandfabrication() {
     <div>
       {/* Add content for the JobDescription page */}
       <h2>Universaltankandfabrication</h2>
-      <p>This is the job description page.</p>
+      <p>main task: Assembly/weld of baghouse units, trained on assembly of manways. maintaining updated traveler manifest. assembly and welding of saddles for various pressure vessels. </p>
     </div>
   );
 }
