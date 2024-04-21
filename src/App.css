@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+.external-link {
+  color: #007BFF; /* Blue color for the link */
+  text-decoration: none; /* Removes underline */
+  font-size: 16px; /* Sets font size */
+  margin-top: 20px; /* Adds space above the link */
+  display: inline-block; /* Makes the link align properly */
+}
+
+.external-link:hover {
+  text-decoration: underline; /* Adds underline on hover for better UX */
+  color: #0056b3; /* Darker blue on hover */
+}

@@ -1,42 +1,44 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './styles.css';
+
+import './printingLab.css';
+import './printingLab.js';
 
 
 // Define your page components
 function Home() {
+  // State to manage the visibility of the about section
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  // Function to toggle the about section
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+  
   return (
     <div className="container">
       <div className="page">
-        <h1>about me</h1>
-        {
-          <p className="brief-header"> Welcome to my personal page! My name is Eric Canada, and I am a passionate technologist currently advancing my expertise in Artificial Intelligence at the University of Advancing Technology (UAT). My academic journey is a blend of rigorous theory and hands-on experience, preparing me to contribute to the ever-evolving landscape of AI. Professionally, I stand at the intersection of technology and craftsmanship as a lathe programmer specializing in the Aerospace industry. My role involves precision and attention to detail, ensuring that the components we produce meet the exacting standards this field demands. Outside of my professional life, I am an avid technophile with a penchant for 3D printing. My home is my workshop, where I bring ideas to life using tools like Fusion 360 and other creative engines. There's a unique kind of joy in watching a concept materialize layer by layer, and it's this magic that fuels my enthusiasm for digital fabrication. But my skills are not confined to the virtual realm. As an experienced welder, I understand the value of traditional craftsmanship and its irreplaceable role in a world that's quickly moving towards the digital. Welding has taught me patience, precision, and the importance of a steady hand—skills that are surprisingly synergistic with programming and AI development. Speaking of programming, it is another arena where I thrive. Building programs and crafting Python applications is more than a job or a hobby; it's a means to problem-solve, to innovate, and to create tools that could one day change how we interact with technology. Whether it's through lines of code, a welded joint, or a 3D printed model, I find my calling in creation. It is in the act of making new things, improving existing ones, and learning from the process that I find my professional fulfillment. If you're curious about my work or share similar interests, feel free to connect. I am always open to discussing new technologies, potential collaborations, or simply exchanging ideas with fellow enthusiasts.  </p>
-        }
+        <h1 onClick={toggleCollapse} style={{ cursor: 'pointer' }}>About Me</h1>
+        {!isCollapsed && (
+          <p className="brief-header">
+            Welcome to my personal page! My name is Eric Canada, and I am a passionate technologist currently advancing my expertise in Artificial Intelligence at the University of Advancing Technology (UAT). My academic journey is a blend of rigorous theory and hands-on experience, preparing me to contribute to the ever-evolving landscape of AI. Professionally, I stand at the intersection of technology and craftsmanship as a lathe programmer specializing in the Aerospace industry. My role involves precision and attention to detail, ensuring that the components we produce meet the exacting standards this field demands. Outside of my professional life, I am an avid technophile with a penchant for 3D printing. My home is my workshop, where I bring ideas to life using tools like Fusion 360 and other creative engines. There's a unique kind of joy in watching a concept materialize layer by layer, and it's this magic that fuels my enthusiasm for digital fabrication. But my skills are not confined to the virtual realm. As an experienced welder, I understand the value of traditional craftsmanship and its irreplaceable role in a world that's quickly moving towards the digital. Welding has taught me patience, precision, and the importance of a steady hand—skills that are surprisingly synergistic with programming and AI development. Speaking of programming, it is another arena where I thrive. Building programs and crafting Python applications is more than a job or a hobby; it's a means to problem-solve, to innovate, and to create tools that could one day change how we interact with technology. Whether it's through lines of code, a welded joint, or a 3D printed model, I find my calling in creation. It is in the act of making new things, improving existing ones, and learning from the process that I find my professional fulfillment. If you're curious about my work or share similar interests, feel free to connect. I am always open to discussing new technologies, potential collaborations, or simply exchanging ideas with fellow enthusiasts.
+            {/* Your existing content continues */}
+          </p>
+          
+        )}
+
+        {/* Adding an external link */}
+      <a href="https://minimo-view.vercel.app/" target="_blank" rel="noopener noreferrer" className="external-link">
+          Visit Minimo View
+        </a>
       </div>
+
       
-
-        <img
-        src="/tiger-shirt.jpg" // Replace with the actual path to your image file
-        alt="eric canada" // Provide a brief description of the image for accessibility
-        width="335" // Set the width of the image (adjust as needed)
-        height="335" // Set the height of the image (adjust as needed)
-/>
-<img
-        src="/meAndPhebe.jpg" // Replace with the actual path to your image file
-        alt="eric canada" // Provide a brief description of the image for accessibility
-        width="335" // Set the width of the image (adjust as needed)
-        height="335" // Set the height of the image (adjust as needed)
-/>
-<img
-        src="/pirateME.jpg" // Replace with the actual path to your image file
-        alt="eric canada" // Provide a brief description of the image for accessibility
-        width="335" // Set the width of the image (adjust as needed)
-        height="335" // Set the height of the image (adjust as needed)
-/>
-
-
-        
     </div>
+
+    
   );
 }
 
@@ -206,7 +208,8 @@ function Skills() {
           </iframe>
         </div>
         
-        
+                                                                                                            
+
        
 
         <p className="brief-header"> programing </p>
