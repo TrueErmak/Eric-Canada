@@ -75,7 +75,7 @@ function EmploymentInformation() {
           
           <p className="brief-common-text">University of Advancing Technology (UAT)
           Bachelor of Science in Artificial Intelligence & Robotics/ Embedded systems.  
-          [from 6,15,2020 to ] 
+          [from 6,15,2020 to 3,20,2024 ] 
           </p>
         }
 
